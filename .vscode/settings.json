@@ -2,8 +2,6 @@
   "search.exclude": {
     "**/node_modules": true,
     "**/dist": true,
-    "**/docs": true,
-    "**/docs/index.html": false,
   },
   "files.exclude": {
     "**/.git": true,

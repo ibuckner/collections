@@ -1,19 +1,16 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A small collection of data structure functions",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "type": "commonjs",
   "name": "@buckneri/collections",
   "scripts": {
-    "build": "npm run compile",
-    "compile": "rollup -cw",
-    "list-globals": "npm list -g --depth 0",
+    "build": "rollup -c",
     "test": "npm run test-jest",
     "test-debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --config jestconfig.json --runInBand",
     "test-jest": "jest --config jestconfig.json",
     "test-upload": "npm publish --dry-run --access public",
-    "test-www": "http-server ./docs -a localhost -p 5000 -o",
     "upload": "npm publish --access public"
   },
   "repository": {
@@ -29,18 +26,18 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
-    "@types/jest": "26.0.7",
-    "@typescript-eslint/eslint-plugin": "^3.7.0",
-    "@typescript-eslint/parser": "^3.7.0",
-    "eslint": "^7.5.0",
+    "@types/jest": "26.0.9",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsdoc": "30.0.3",
-    "jest": "^26.1.0",
+    "eslint-plugin-jsdoc": "30.2.1",
+    "jest": "^26.2.2",
     "jsdoc": "3.6.5",
     "rollup": "2.23.0",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
-    "ts-jest": "^26.1.3",
+    "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   }
 }

@@ -25,11 +25,6 @@ export default [
 				file: "./dist/iife/collections.js",
 				format: "iife",
 				name: "collections"
-			},
-			{
-				file: "./docs/lib/collections.js",
-				format: "iife",
-				name: "collections"
 			}
 	  ],
 	  plugins: [
