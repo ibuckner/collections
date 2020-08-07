@@ -6,6 +6,7 @@
 .github
 .vscode
 build
+coverage
 node_modules
 pnpm-lock.yaml
 rollup.config.js
