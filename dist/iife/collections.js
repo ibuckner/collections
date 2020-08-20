@@ -38,6 +38,7 @@ var collections = (function (exports) {
        */
       jump(item) { this._.unshift(item); return this; }
   }
+
   (function (SlicerModifier) {
       SlicerModifier[SlicerModifier["NO_KEY"] = 0] = "NO_KEY";
       SlicerModifier[SlicerModifier["CTRL_KEY"] = 1] = "CTRL_KEY";
@@ -263,6 +264,7 @@ var collections = (function (exports) {
           return this;
       }
   }
+
   /**
    * returns a set (unique) of values from an array
    * @param a - array of values
