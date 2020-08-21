@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A small collection of data structure functions",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
