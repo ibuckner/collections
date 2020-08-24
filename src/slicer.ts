@@ -35,7 +35,7 @@ export class Slicer<T> {
 
   public lastSelection: T | undefined;
 
-  constructor(list?: T[]) {
+  constructor(list?: T | T[] | undefined) {
     if (list) {
       if (Array.isArray(list)) {
         list.forEach((item: T) => {

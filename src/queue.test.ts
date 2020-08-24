@@ -10,6 +10,8 @@ test("Queue tests", () => {
   expect(q1.last).toBeNull();
   expect(q2.last).toStrictEqual(5);
   q2.clear();
+  expect(q2.next()).toBeNull();
+  expect(q2.leave()).toBeNull();
   expect(q2.length).toStrictEqual(0);
   q2.join(1).join(2).join(3).jump(11).join(33);
   expect(q2.length).toStrictEqual(5);

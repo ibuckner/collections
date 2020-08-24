@@ -32,10 +32,14 @@ test("Test slicer using Ctrl key", () => {
   expect(slicer.members).toStrictEqual(["cat", "dog", "rat"]);
   expect(slicer.lastSelection).toBeUndefined();
   expect(slicer.selection).toStrictEqual([]);
+
+  slicer.remove("rat").remove("dog").remove("cat");
+  expect(slicer.lastSelection).toBeUndefined();
 });
 
 test("Test slicer with no key", () => {
-  const slicer: Slicer<string> = new Slicer<string>(["cat", "dog", "rat"]);
+  const slicer: Slicer<string> = new Slicer<string>();
+  slicer.add("cat").add("dog").add("rat");
   expect(slicer.lastSelection).toBeUndefined();
   expect(slicer.selection).toStrictEqual([]);
   expect(slicer.members).toStrictEqual(["cat", "dog", "rat"]);
@@ -59,7 +63,8 @@ test("Test slicer with no key", () => {
 });
 
 test("Test slicer using Shift key", () => {
-  const slicer: Slicer<string> = new Slicer<string>(["cat", "dog", "rat"]);
+  const slicer: Slicer<string> = new Slicer<string>("cat");
+  slicer.add("dog").add("rat");
   expect(slicer.lastSelection).toBeUndefined();
   expect(slicer.selection).toStrictEqual([]);
   expect(slicer.members).toStrictEqual(["cat", "dog", "rat"]);
