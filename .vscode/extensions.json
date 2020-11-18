@@ -2,6 +2,8 @@
   // See https://go.microsoft.com/fwlink/?LinkId=827846
   // for the documentation about the extensions.json format
   "recommendations": [
+    "bashmish.es6-string-css",
+    "christian-kohler.npm-intellisense",
     "DavidAnson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
     "firsttris.vscode-jest-runner",
